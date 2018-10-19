@@ -1,1 +1,7 @@
-fastai
+#fastai
+bcolz
+graphviz
+sklearn_pandas
+isoweek
+pandas_summary
+torchtext
