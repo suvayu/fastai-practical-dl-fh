@@ -1,0 +1,18 @@
+# see: https://docs.floydhub.com/floyd_config
+# https://github.com/floydhub/floyd-cli/blob/master/floyd/cli/default_floyd.yml
+
+max_runtime: 3600
+
+env: pytorch-1.0
+
+task:
+  testcpu:
+    machine: cpu
+    input:
+      - source: qgravy/datasets/dogs-cats-fastai/1
+        destination: dogscats
+  testgpu:
+    machine: gpu
+    input:
+      - source: qgravy/datasets/dogs-cats-fastai/1
+        destination: dogscats
